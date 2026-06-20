@@ -8,7 +8,7 @@ Sarah's neural network model from L07 ships fine for predicting checkout complet
 
 Then Marcus drops the next request: *"Our merchandising team uploads thousands of new product photos every season. Can we auto-tag them as 'dress', 'shirt', 'sneaker' so the catalogue search works on day one?"*
 
-This is a different problem. The input isn't 9 numeric features anymore — it's a 28×28 (or larger) grid of pixels. Logistic regression on flattened pixels works ~85% of the time, which sounds OK until you realise that means 1 in 7 product images gets mis-tagged.
+This is a different problem. The input isn't 9 numeric features anymore — it's a 28×28 (or larger) grid of pixels. A flat MLP on flattened pixels works ~87% of the time, which sounds OK until you realise that means roughly 1 in 8 product images gets mis-tagged.
 
 This is where **convolutional neural networks** earn their reputation.
 

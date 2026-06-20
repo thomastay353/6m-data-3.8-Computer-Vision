@@ -79,7 +79,7 @@ Work through these after finishing the three Part notebooks. Attempt each questi
 
 **Q5 — Training-loop reuse.** Your CNN gets ~88% on Fashion-MNIST; the MLP from L07 got ~87%. A colleague says: *"Tiny improvement — and a whole new framework to learn."* Correct them.
 
-> **Sample answer:** The framework is unchanged — `zero_grad → forward → loss → backward → step` is identical to L07. `Conv2d`/`MaxPool2d` are drop-in replacements for `Linear`. The Fashion-MNIST gap looks small (88 vs 87%) because the dataset is easy and small, but it is achieved with about half the parameters; and on a realistic dataset like CIFAR-10 (assignment) the CNN beats the MLP by 10+ percentage points. The improvement scales with image complexity — Fashion-MNIST hides it.
+> **Sample answer:** The framework is unchanged — `zero_grad → forward → loss → backward → step` is identical to L07. `Conv2d`/`MaxPool2d` are drop-in replacements for `Linear`. The Fashion-MNIST gap looks small (88 vs 87%) because the dataset is easy and small, but it is achieved with about half the parameters; and the CNN's advantage over a flattened MLP grows sharply with image complexity — Fashion-MNIST silhouettes hide it, colour photos like CIFAR-10 (assignment) make it obvious.
 
 ### Part 3 — Transfer learning
 
